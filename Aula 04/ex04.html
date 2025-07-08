@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evento DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background: green;
+            color: white;
+            width: 220px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+
+ 
+               }
+    </style>
 </head>
 <body>
-    <div id="area">
-        interajaaaa....
-
+    <div id = "area">
+            Interajaaaa.... 
     </div>
 </body>
 </html>
+<script>
+    //eventos DOM - internet: Javascript DOM events Lists- event reference
+    addEventListener ('click', clicar)
+    addEventListener ('mouseenter', entrar)
+    addEventListener ('mouseout', sair)
+
+    function clicar() {
+        var a = document.getElementById("area")
+        a.innerText = "Clicou"
+        a.style.background = "red"
+            }
+            function entrar() {
+                var a = document.getElementById ("area")
+                a.innerText = "Entrar"
+            }
+            function sair(){
+                var a = document.getElementById ("area")
+                a.innerText = "Sair"
+                a.style.background = "green"
+            }
+</script>
