@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasileiro ou Estrangeiro?</title>
+</head>
+<body>
+  <h1>Você é Brasileiro ou Estrangeiro?</h1>
+  Qual o País que Você nasceu? <input type="text" name="txtpais" id="txtpais">
+  <input type="button" value="Verificar" onclick= "Verificar()">
+<div id="res">
+
+</div>
+<script>
+  function Verificar() {
+    var pais = document.getElementById('txtpais')
+    var res = document.getElementById('res')
+    var nac = txtpais.value
+    res.innerHTML = `<p>Você Nasceu  ${nac}</p>`
+    if (nac == "Brasil") {
+      res.innerHTML += "<p>Você é Brasileiro!</p>"
+    }
+    else {
+      res.innerHTML += 'Você é Estrangeiro!'
+    }
+  }
+   
+  </script>
+</body>
+</html>
