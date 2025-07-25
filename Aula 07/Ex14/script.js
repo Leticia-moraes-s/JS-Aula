@@ -42,5 +42,5 @@ function verificar () {
         }
             res.style.textAlign = "center"
             res.innerHTML = `<p>Detectamos ${gênero} com ${idade} anos!</p>`
-            res.appendChild(img)
+            res.appendChild(img)    
 }
