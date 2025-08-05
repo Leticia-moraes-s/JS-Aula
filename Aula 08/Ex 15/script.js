@@ -12,7 +12,6 @@ window.alert ("[ERRO]: Faltam dados")
     var f = Number(fim.value)
     var p = Number(passo.value)
 
-    
 }
     
 }
